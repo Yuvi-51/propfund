@@ -1,0 +1,10 @@
+import HomeBody from "@/components/home/HomeBody";
+import styles from "./page.module.css";
+
+export default function Home() {
+  return (
+    <main className={styles.main}>
+    <HomeBody/>
+    </main>
+  );
+}

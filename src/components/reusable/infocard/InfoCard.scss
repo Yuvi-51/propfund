@@ -1,0 +1,80 @@
+.info_card {
+  .card_div {
+    cursor: pointer;
+    width: 30%;
+    margin: 10px;
+    border: 0.5px solid #ccc;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px 10px 25px;
+    border: 1px solid #dcdefd;
+    -webkit-box-shadow: 0px 4px 24px 0px rgba(19, 33, 110, 0.25);
+    box-shadow: 0px 4px 24px 0px rgba(19, 33, 110, 0.25);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    height: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    // transition: all 0.3s ease;
+  }
+  .card_div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  // .card_div:hover {
+  //   transform: scale(1.1);
+  // }
+  // .card_div:hover {
+  //   -webkit-box-shadow: 0px 4px 24px 0px rgba(19, 33, 110, 0.25);
+  //   box-shadow: 0px 4px 24px 0px rgba(19, 33, 110, 0.25);
+  //   -webkit-transition: -webkit-box-shadow 0.1s ease-out,
+  //     -webkit-transform 0.1s ease-out;
+  //   transition: -webkit-box-shadow 0.1s ease-out,
+  //     -webkit-transform 0.1s ease-out;
+  //   transition: box-shadow 0.1s ease-out, transform 0.1s ease-out;
+  //   transition: box-shadow 0.1s ease-out, transform 0.1s ease-out,
+  //     -webkit-box-shadow 0.1s ease-out, -webkit-transform 0.1s ease-out;
+  // }
+  .img {
+    border-radius: 10px;
+    width: 280px;
+    height: 220px;
+    margin-top: 10px;
+  }
+  .img_div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .name {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #cf9b52;
+    font-style: normal;
+    text-align: left;
+  }
+  .linked_in {
+    cursor: pointer;
+    // position: absolute;
+    border: 1px solid #cf9b52;
+    padding: 5px !important;
+    border-radius: 50px;
+    background-color: white;
+    margin-left: -15%;
+    margin-bottom: -5%;
+  }
+}
+
+@media (max-width: 800px) {
+  .info_card {
+    .card_div {
+      width: 100%; /* Show one card per row */
+    }
+  }
+}

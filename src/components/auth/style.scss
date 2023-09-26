@@ -1,0 +1,122 @@
+.register {
+  margin-top: 10%;
+  .login_div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .main_div {
+    width: 50%;
+    padding: 60px 40px;
+    border: 1px solid #c3c7e4;
+    border-radius: 10px;
+    margin-bottom: 50px;
+  }
+  .ask_a_question{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    line-height: 42px;
+    color: #cf9b52;
+    font-style: normal;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .heading {
+    font-size: 32px;
+    line-height: 42px;
+    color: #cf9b52;
+    font-style: normal;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .info {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #212529;
+    font-style: normal;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .info a {
+    font-weight: inherit;
+    color: #cf9b52 !important;
+  }
+  .phone_number {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  label {
+    margin-bottom: 5px !important;
+  }
+  .send_otp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #212529;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    margin-top: 40px !important;
+    cursor: pointer;
+  }
+  .send_otp:hover {
+    -webkit-box-shadow: 0px 10px 24px 0px rgba(255, 193, 7, 0.39);
+    box-shadow: 0px 10px 24px 0px rgba(255, 193, 7, 0.39);
+  }
+  .or {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    color: #cf9b52;
+    font-size: 28px;
+  }
+  .google_login {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .special-label {
+    display: none;
+  }
+  .input-no {
+    width: 100%;
+    padding: 14px 30px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #ffffff20;
+  }
+  .phone_number input {
+    margin-left: -25px;
+    width: 110%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+  }
+
+  .flag {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .register {
+    margin-top: 30%;
+    .main_div {
+      width: 90%;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.opportunity {
+  margin-top: 10%;
+  .browse_opportunities {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 45px;
+    line-height: 69px;
+    font-weight: 600;
+    color: #cf9b52;
+    font-style: normal;
+    text-align: left;
+  }
+  .filter_options {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: -50px;
+  }
+  .filter_options p {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #cf9b52;
+    font-style: normal;
+    text-align: left;
+  }
+  select {
+    width: 100px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 5px;
+    z-index: 101;
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .opportunity {
+    margin-top: 25%;
+  }
+  .property_card {
+    margin-right: 5px !important;
+  }
+  .property_card_investor {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .browse_opportunities {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
