@@ -1,0 +1,241 @@
+.other_property {
+  margin: 30px;
+  .card:hover {
+    transform: scale(1.01); /* Increase the scale on hover (zoom in) */
+  }
+
+  .card {
+    margin-top: 60px;
+    box-shadow: -5px 0 5px rgba(32, 31, 31, 0.2),
+      /* Left shadow */ 5px 0 5px rgba(0, 0, 0, 0.2),
+      /* Right shadow */ 0 -5px 5px rgba(0, 0, 0, 0.2),
+      /* Top shadow */ 0 5px 5px rgba(0, 0, 0, 0.2); /* Bottom shadow */
+    background: #fff;
+    transition: transform 0.3s;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    .card-body {
+      display: flex;
+      flex-flow: row wrap;
+      padding: 30px;
+    }
+    header {
+      flex: 100%;
+    }
+    .meta {
+      margin-bottom: 22px;
+    }
+    .chips {
+      align-self: flex-end;
+    }
+    .featured-image {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      overflow: hidden;
+      width: 100%;
+      height: 300px; // only for mobile, vertical cards: flex-direction: column;
+    }
+  }
+  .custom-progress {
+    margin-top: -10px;
+    width: 100%; // Adjust the width as needed
+    height: 13px; // Adjust the height as needed
+    border: none;
+    background-color: #eeeeee; // Whole bar color (green)
+    border-radius: 10px; // Add some border radius for a rounded appearance
+    overflow: hidden;
+    .custom-progress-inner {
+      content: "";
+      display: block;
+      height: 80%;
+      background-color: #cf9b52; // Actual value bar color (red)
+      border-radius: 5px; // Add the same border radius as the progress element
+    }
+  }
+  .hr_line {
+    margin: 10px;
+    width: 100%;
+    border: solid 0.5px rgb(207, 207, 207);
+  }
+  .card_data {
+    margin: 7px;
+    color: #cf9b52;
+    font-size: 18px;
+    // font-weight: 600;
+  }
+  .card_data span {
+    color: #3f4448;
+  }
+  .investment_data {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .sub_title_card {
+    color: #3f4448;
+    font-size: 12px;
+    // font-weight: 600;
+  }
+  .title h3 {
+    font-size: 22px !important;
+  }
+  .numeric_data {
+    margin-top: -5px;
+    color: #cf9b52;
+    font-size: 14px;
+    // font-weight: 600;
+  }
+  // Horizontal kicks in
+  @media only screen and (min-width: 768px) {
+    .card {
+      flex-direction: row;
+      height: 379px; // desktop horizontal cards with featured image
+      width: 100%;
+      h3 {
+        font-size: calc(100% + 1vw);
+      }
+      .featured-image {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-top-right-radius: 0;
+        max-width: 350px;
+        height: 100%; // desktop horizontal cards with featured image
+      }
+    }
+  }
+}
+//
+// monitor screen sizes
+@media only screen and (min-width: 1280px) {
+  .other_property {
+    .card {
+      h3 {
+        font-size: 28px;
+      }
+    }
+  }
+
+  // Typography
+  * {
+    font-family: "Futura", sans-serif !important;
+  }
+  h3 {
+    font-size: 28px;
+    line-height: 1.2;
+    // font-weight: bold;
+    color: #cf9b52;
+    margin: 0.5em 0;
+  }
+  .pre-heading {
+    color: #444;
+    font-size: 20px;
+    // font-weight: 400;
+    text-transform: uppercase;
+  }
+  .meta {
+    color: #555;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  // NON-CARD STYLES
+  ul {
+    display: block;
+    margin: 0 auto;
+    max-width: 1160px;
+    padding: 30px;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  // Recruitler.com's _chips.scss
+  // container for chips
+  .chips {
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+
+    // hide scrollbars chrome / IE10+ & Edge
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    -ms-overflow-style: none;
+  }
+  // single chips
+  .chip {
+    padding: 10px 26px 12px;
+    background-color: #3f4448;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #ffffff !important;
+    // font-weight: 600;
+    display: inline-block;
+    border: 0px;
+    outline: 0px;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  .chip:hover {
+    color: #cf9b52;
+  }
+  ul {
+    margin: 0;
+  }
+  .top-right-button {
+    position: absolute;
+    top: 10px; /* Adjust the top position as needed */
+    right: 10px; /* Adjust the right position as needed */
+    background-color: red; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: 4 4 4 4 red;
+    animation: glow 1.4s linear infinite;
+  }
+
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 0 0 red;
+    }
+
+    50% {
+      box-shadow: 0 0 0 0 red;
+      box-shadow: 0 0 30px 0;
+    }
+  }
+  @media (max-width: 800px) {
+    .property_card_main {
+      width: 200%;
+    }
+    .chips {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

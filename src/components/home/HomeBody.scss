@@ -36,7 +36,7 @@
   justify-content: center;
   flex-direction: column;
   // color: black;
-  margin-top: 40px;
+  margin-top: 80px;
   width: 100%;
   margin-bottom: 8%;
 }
@@ -88,8 +88,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: -5px 0 10px rgba(32, 31, 31, 0.1),
+    /* Left shadow */ 5px 0 10px rgba(0, 0, 0, 0.1),
+    /* Right shadow */ 0 -5px 10px rgba(0, 0, 0, 0.1),
+    /* Top shadow */ 0 5px 10px rgba(0, 0, 0, 0.1); /* Bottom shadow */
   width: 100%;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 .sub_counter {
   display: flex;
@@ -103,7 +108,7 @@
 }
 .counter_text {
   color: #cf9b52;
-  font-size: 16px;
+  font-size: 14px;
   margin-top: -10px;
   font-weight: 500;
 }
@@ -113,7 +118,7 @@
   justify-content: center;
   flex-direction: column;
   width: 200px;
-  height: 150px;
+  height: 100px;
   margin: 20px;
 }
 .payment_div {
@@ -138,14 +143,36 @@
   font-size: 14px;
 }
 .payment_imges img {
-  width: 150px;
-  height: 50px;
+  width: 120px;
+  height: 40px;
 }
+.comming_soon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #f3bd70;
+  color: #f3bd70;
+  padding: 9px;
+  border-radius: 6px;
+}
+.comming_soon:hover {
+  background-color: #f3bd70;
+  color: white;
+}
+.calculator_div {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // margin: 20px !important;
+}
+
 .payment_imges {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   margin-top: 20px;
+  gap: 20px;
 }
 .image_div {
   width: 100%;
@@ -230,6 +257,17 @@ h3 {
 }
 .author {
   text-transform: uppercase;
+}
+.home_div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.mobile_image {
+  width: 150px;
+  margin-left: -200px !important;
 }
 .video_div {
   // border: 1px solid black;
@@ -460,6 +498,26 @@ a.chip.large {
     margin-top: -40px;
     background-position: center top;
   }
+  .home_div {
+    flex-direction: column;
+  }
+  .mobile_img_mobile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .calculator_div{
+    width: 90vw;
+    // margin: 20px !important;
+  }
+  .mobile_image {
+    width: 80%;
+    margin-left: 0px !important;
+    margin-top: -20px;
+    margin-bottom: 60px;
+  }
   .hero_content {
     margin-bottom: 35% !important;
   }
@@ -476,7 +534,7 @@ a.chip.large {
     font-size: 14px;
   }
   .payment_imges {
-    width: 100%;
+    width: 130%;
     flex-wrap: wrap;
     gap: 20px;
   }
@@ -486,6 +544,7 @@ a.chip.large {
   }
   .counters {
     flex-direction: column;
+    width: 300px;
   }
   .feedback_main {
     width: 320px !important;
@@ -493,10 +552,10 @@ a.chip.large {
       width: 100% !important;
     }
   }
-  .placeholder_main{
+  .placeholder_main {
     gap: 40px;
   }
-  .content_div{
+  .content_div {
     width: 100%;
     margin-top: -80px;
   }

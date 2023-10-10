@@ -1,6 +1,9 @@
 .property_card {
   width: 100vw;
   margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -9,6 +12,7 @@
 .card:hover {
   transform: scale(1.01); /* Increase the scale on hover (zoom in) */
 }
+
 .card {
   margin-top: 60px;
   box-shadow: -5px 0 5px rgba(32, 31, 31, 0.2),
@@ -109,6 +113,7 @@
   .card {
     flex-direction: row;
     height: 379px; // desktop horizontal cards with featured image
+    width: 100%;
     h3 {
       font-size: calc(100% + 1vw);
     }
@@ -198,7 +203,7 @@ a {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-.chip:hover{
+.chip:hover {
   color: #cf9b52;
 }
 ul {

@@ -28,18 +28,18 @@ const InfoCard = () => {
       linkedIn: "https://www.linkedin.com/in/dinesh-vasudevan-9aa78951/",
       image: "/Mr. Dinesh Vasudevan.jpg",
     },
-    {
-      id: 1,
-      name: "Mr. Yogeshwar Nagda",
-      linkedIn: "https://www.linkedin.com/in/nagda-yogeshwar-62221a8/",
-      image: "/Mr. Yogeshwar Nagda.webp",
-    },
-    {
-      id: 1,
-      name: "Mr. Sukant Mangal",
-      linkedIn: "https://www.linkedin.com/in/sukant-mangal-8947655/",
-      image: "/Mr. Sukant Mangal.webp",
-    },
+    // {
+    //   id: 1,
+    //   name: "Mr. Yogeshwar Nagda",
+    //   linkedIn: "https://www.linkedin.com/in/nagda-yogeshwar-62221a8/",
+    //   image: "/Mr. Yogeshwar Nagda.webp",
+    // },
+    // {
+    //   id: 1,
+    //   name: "Mr. Sukant Mangal",
+    //   linkedIn: "https://www.linkedin.com/in/sukant-mangal-8947655/",
+    //   image: "/Mr. Sukant Mangal.webp",
+    // },
   ];
 
   return (

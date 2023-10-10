@@ -11,6 +11,7 @@ import "slick-carousel/slick/slick-theme.css";
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
 import CheckCircleTwoToneIcon from "@mui/icons-material/CheckCircleTwoTone";
 import PropertyCard from "../reusable/PropertyCard.jsx";
+import Calculator from "../reusable/calculator/Calculator";
 
 const HomeBody = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -83,19 +84,30 @@ const HomeBody = () => {
   return (
     <>
       <div className="hero_background">
-        <div className="hero_content container">
-          <div className="hero_floating_words ">{words[currentWordIndex]}</div>
-          <div className="hero_line">way to invest in Real Estate</div>
-          <div className="hero_para">
-            Start growing your passive income today.
+        <div className="home_div container">
+          <div className="hero_content ">
+            <div className="hero_floating_words ">
+              {words[currentWordIndex]}
+            </div>
+            <div className="hero_line">way to invest in Real Estate</div>
+            <div className="hero_para">
+              Start growing your passive income today.
+            </div>
+          </div>
+          <div className="mobile_img_mobile">
+            <img
+              src="/propfund mobile.jpeg"
+              alt="img"
+              className="mobile_image"
+            />
           </div>
         </div>
       </div>
-      <div className="counters container">
+      <div className="counters ">
         <div className="counter_box">
           <div className="sub_counter">
             <CountUp
-              end={250}
+              end={10}
               style={{
                 color: "black",
                 fontSize: 40,
@@ -137,7 +149,6 @@ const HomeBody = () => {
           <div className="counter_text">AUM</div>
         </div>
       </div>
-      <PropertyCard />
       <div className="row  video_div container">
         <div className="col-md-6 video_tag">
           <iframe
@@ -197,6 +208,10 @@ const HomeBody = () => {
           </div>
         </div>
       </div>
+      <div className="calculator_div">
+      <Calculator/>
+      </div>
+      <PropertyCard />
       <div className="container payment_div ">
         <div className="image_div">
           <img
@@ -234,6 +249,7 @@ const HomeBody = () => {
               alt="img"
               src="/Payment-Gateway-Invoicing-Google.webp"
             />
+            <span className="comming_soon">COMMING SOON...</span>
           </div>
         </div>
       </div>

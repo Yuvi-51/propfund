@@ -1,5 +1,12 @@
 .opportunity {
   margin-top: 10%;
+  .property_card_investor {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .browse_opportunities {
     display: flex;
     align-items: center;
@@ -36,6 +43,9 @@
     padding: 5px;
     z-index: 101;
     cursor: pointer;
+  }
+  .Mui-selected:hover {
+    background-color: #f3bd70 !important;
   }
 }
 @media only screen and (max-width: 800px) {

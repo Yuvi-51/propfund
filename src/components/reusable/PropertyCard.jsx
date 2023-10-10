@@ -17,7 +17,7 @@ const PropertyCard = () => {
   return (
     <div className="property_card_main">
       <Slider className="slider-container" {...sliderSettings}>
-        <ul className="property_card container">
+        <ul className="property_card ">
           <li className="card">
             <Link
               href="#"

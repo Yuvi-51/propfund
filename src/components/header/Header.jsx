@@ -8,6 +8,7 @@ import Link from "next/link";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [collaps, setcollaps] = useState(false);
+  const [selectedLink, setSelectedLink] = useState("");
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -28,6 +29,7 @@ const Header = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
   return (
     <header className="header">
       {/* app Logo */}
@@ -37,20 +39,45 @@ const Header = () => {
       {/* navbar */}
       <div className="header_nav">
         <div className="header_sub_nav">
-          <Link href="/properties">Investments</Link>
-          <Link href="/about_us">About Us</Link>
-          <Link href="/contact_us">Contact Us</Link>
+          <Link
+            href="/properties"
+            className={selectedLink === "properties" ? "active" : ""}
+            onClick={() => setSelectedLink("properties")}
+          >
+            Properties
+          </Link>
+          <Link
+            href="/about_us"
+            className={selectedLink === "about_us" ? "active" : ""}
+            onClick={() => setSelectedLink("about_us")}
+          >
+            About Us
+          </Link>
+          <Link
+            href="/contact_us"
+            className={selectedLink === "contact_us" ? "active" : ""}
+            onClick={() => setSelectedLink("contact_us")}
+          >
+            Contact Us
+          </Link>
+          <Link
+            href="/how_it_works"
+            className={selectedLink === "how_it_works" ? "active" : ""}
+            onClick={() => setSelectedLink("how_it_works")}
+          >
+            How It Works
+          </Link>
           <span className="collapsible-menu_nav">
             <a onClick={toggleMore}>
-              More{" "}
+              Learn{" "}
               {collaps ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
             </a>
             {collaps && (
               <span className="menu_content_nav">
-                <Link href="/how_it_works" className="sub_content_nav">
-                  How It Works
+                <Link href="" className="sub_content_nav" onClick={toggleMore}>
+                  FAQ
                 </Link>
-                <Link href="" className="sub_content_nav">
+                <Link href="" className="sub_content_nav" onClick={toggleMore}>
                   Our Blogs
                 </Link>
               </span>
@@ -76,7 +103,7 @@ const Header = () => {
       <nav className={`nav ${isOpen ? "nav-open" : ""}`}>
         <div className="nav-content">
           <Link href="/properties" onClick={toggleMenu}>
-            Investments
+            Properties
           </Link>
           <Link href="/about_us" onClick={toggleMenu}>
             About Us
@@ -84,9 +111,12 @@ const Header = () => {
           <Link href="/contact_us" onClick={toggleMenu}>
             Contact Us
           </Link>
+          <Link href="/how_it_works" onClick={toggleMenu}>
+            How It Works
+          </Link>
           <span className="collapsible-menu">
             <a onClick={toggleMore}>
-              More{" "}
+              Learn{" "}
               {collaps ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
             </a>
             {collaps && (
@@ -99,7 +129,7 @@ const Header = () => {
                     toggleMore();
                   }}
                 >
-                  How It Works
+                  FAQ
                 </Link>
                 <Link
                   href=""

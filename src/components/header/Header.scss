@@ -204,6 +204,9 @@
 .sub_content_nav a:hover {
   color: #007bff;
 }
+.active {
+  color: #f3bd70 !important; /* Highlight color for the active link */
+}
 @media only screen and (max-width: 800px) {
   .header {
     justify-content: space-between;
@@ -236,7 +239,7 @@
   .bar.open:nth-child(2) {
     transform: scaleX(0);
   }
-
+ 
   .bar.open:nth-child(3) {
     transform: translateY(-7px) rotate(45deg);
   }
