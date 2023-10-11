@@ -209,6 +209,7 @@ const HomeBody = () => {
         </div>
       </div>
       <div className="calculator_div">
+      <h2>Investment Calculator</h2>
       <Calculator/>
       </div>
       <PropertyCard />

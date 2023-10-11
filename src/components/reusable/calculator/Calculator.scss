@@ -1,19 +1,32 @@
 .calculator {
-  font-family: Arial, sans-serif;
+  // font-family: Arial, sans-serif;
   padding: 20px;
   border: 1px solid #ccc;
-  width: 450px;
+  width: 100%;
   margin: 0 auto;
   background-color: #f7f7f7;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  .custom-input {
-    background-color: #f3bd70;
+  box-shadow: 4px 8px 8px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-wrap: wrap;
+  input[type="range"] {
+    accent-color: #f3bd70 !important;
   }
-
+  // background: conic-gradient(
+  //   from 137deg at 50% 50%,
+  //   #f4ab73 78.75deg,
+  //   #f5bf64 136.0465443134308deg,
+  //   #f2bc69 185.40679693222046deg,
+  //   #f3b89f 276.2696957588196deg,
+  //   #f5ac72 348.9927291870117deg
+  // );
   h2 {
     text-align: center;
     margin-bottom: 20px;
+    color: #f3bd70;
   }
   .input-group {
     margin-bottom: 20px;
@@ -27,18 +40,71 @@
     display: inline-block;
     vertical-align: middle;
   }
+  .calculator_div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
   span {
     display: inline-block;
     width: 25%;
-    text-align: right;
+    text-align: left;
     vertical-align: middle;
     margin-left: 5%;
   }
+  .chart {
+    width: 300px; /* Adjust the width to your preference */
+    height: 300px; /* Adjust the height to your preference */
+  }
+  .pie-chart {
+    max-width: 400px;
+    margin: auto;
+  }
+
   #results {
-    margin-top: 20px;
-    padding: 10px;
+    // margin-top: 20px;
+    padding: 30px;
     background-color: #e6e6e6;
     border-radius: 5px;
     box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    // background: conic-gradient(
+    //   from 137deg at 50% 50%,
+    //   #f3bd70 78.75deg,
+    //   #f5bf64 136.0465443134308deg,
+    //   #f5bf64 186.40679693222046deg,
+    //   #2b2929 184.40679693222046deg,
+    //   #2b2929 276.2696957588196deg,
+    //   #2b2929 348.9927291870117deg
+    // );
+    
+    p {
+      color: #f3bd70;
+      span {
+        color: black;
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .calculator {
+    #results {
+      padding: 30px;
+      background-color: #e6e6e6;
+      border-radius: 5px;
+      box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      height: 230px;
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

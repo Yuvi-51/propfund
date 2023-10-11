@@ -31,11 +31,28 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
+      <div className="market__area">
+        <img src="/about_us.jpg" alt="img" />
+      </div>
+      <div className="market__area d-flex">
+        <div style={{fontSize:"38px" , width:"100%" , fontWeight:"500"}}>Easier Profitable Smarter way to invest in Real Estate</div>
+        <div  style={{fontSize:"18px",width:"100%"}}>
+          Start growing your passive income today. Earn upto 10-15% p.a with an
+          expected irr of 19%. Invest from as low as 10 Lacs in real estate
+          opportunities worldwide.
+          Start growing your passive income today. Earn upto 10-15% p.a with an
+          expected irr of 19%. Invest from as low as 10 Lacs in real estate
+          opportunities worldwide.
+          Start growing your passive income today. Earn upto 10-15% p.a with an
+          expected irr of 19%. Invest from as low as 10 Lacs in real estate
+          opportunities worldwide.
+        </div>
+      </div>
       <div className="info_card">
         <div className="heading_div">Our Team</div>
 
         <InfoCard />
-        <div className="market__area row">
+        {/* <div className="market__area row">
           <div className=" col-md-6">
             <div className="content">You Invest. Propfund Does the Rest</div>
             <div className="content_para">
@@ -51,7 +68,7 @@ const AboutUs = () => {
           <div className="col-md-6">
             <img src="/about_us.jpg" className="about_us_imgae" />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
